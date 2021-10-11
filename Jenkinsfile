@@ -1,6 +1,7 @@
 pipeline{
-    agent any
-
+    agent {
+        label 'slave1'
+    }
     tools{
         maven 'MAVEN'
         jdk   'JAVA'

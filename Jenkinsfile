@@ -16,13 +16,6 @@ pipeline{
             }
         }
 
-        stage('Build'){
-            steps{
-              sh 'mvn clean compile pom.xml'
-            }
-
-
-        }
         stage('Test')
         {
             steps{

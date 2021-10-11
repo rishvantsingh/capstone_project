@@ -12,7 +12,9 @@ pipeline{
         
         {
             steps{
-                cleanWs()
+               
+                sh 'mvn clean'
+                
             }
         }
 
